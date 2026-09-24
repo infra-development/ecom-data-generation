@@ -10,8 +10,8 @@ class CustomerAcquisitionLoader
 
   override def load(config: Config): AcquisitionConfig = {
     AcquisitionConfig(
-      channel = loadChannel(config.getConfig("channel")),
-      campaign = loadCampaign(config.getConfig("campaign"))
+      acquisitionChannel = loadChannel(config.getConfig("channel")),
+      acquisitionCampaign = loadCampaign(config.getConfig("campaign"))
     )
   }
 
